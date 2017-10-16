@@ -3,17 +3,20 @@
   <head>
     <!--META TAG- to make site responsive ie- work on all devices-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{page.title}}</title>
       <!--normailize file - the purpose of this is to reset style across all browsers so that the styles all look the same on every browser-->
       <link rel="stylesheet" href="Styles/normalize.css">
       <!--gridlex - this is your grids-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css">
       <!--fonts from google-->
-      <link href="https://fonts.googleapis.com/css?family=Jacques+Francois|Quicksand" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Pavanam|Work+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Fjord+One" rel="stylesheet">
       <!-- This calls in your css style sheet -->
       <link rel="stylesheet" href="Styles/main.css">
       <!--font awesome -->
       <script src="https://use.fontawesome.com/bb9eec8df1.js"></script>
-    <title></title>
+
   </head>
   <body>
   <header id="home">
@@ -22,22 +25,22 @@
         <a href="#about">About</a>
         <img src="images/KZlogo.jpg" alt="My Logo"/>
         <a href="#skills">Skills</a>
-        <a href="#connect">Connecr</a>
+        <a href="#connect">Connect</a>
       </nav>
-      <div>
-        <h1>Hello,I'm Katie Zizian</h1>
-        <h2>Toronto Based.</h2>
-        <h2>Designer.</h2>
-        <h2>Developer.</h2>
-        <h2>Good Person.</h2>
+      <div class="intro">
+        <h1>Hello, I'm Katie<span class="blkSpan">.</span></h1>
+        <h2>Toronto Based<span>.</span></h2>
+        <h2>Designer<span>.</span></h2>
+        <h2>Developer<span>.</span></h2>
+        <h2>Good Person<span>.</span></h2>
       </div>
     </header>
-    
+
 {{content}}
 
 
     <footer id="connect">
-      <h2>Get In Touch</h2>
+      <h3>Get In Touch<span>.</span></h3>
         <form class="grid-center" method="POST" action="http://formspree.io/katiezizian@gmail.com">
         <label class="col-7 labelName" for="name">Name</label>
         <input class="col-7" type="text" name="name">

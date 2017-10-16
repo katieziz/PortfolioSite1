@@ -1,15 +1,92 @@
+
 /*GENERAL STYLES*/
 *{
   box-sizing: border-box;
   padding: 0;
+  margin:0;
   border:1px solid grey;
 
+}
+body{
+  font-family: 'Fjord One', serif;
+}
+span {
+  color:#60991F;
+}
+.blkSpan{
+  color:#000;
 }
 /*HEADER STYLE*/
 header nav{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+h1 {
+  color:#60991F;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Pavanam', sans-serif;
+  font-size: 50px;
+  margin-top: 0;
+}
+
+h2, h3, h4 {
+  color:black;
+  text-transform:uppercase;
+  font-family: 'Pavanam', sans-serif;
+  font-weight:bold;
+  font-size: 30px;
+  text-align:center;
+}
+
+h3 {
+  font-size: 70px;
+  text-transform: lowercase;
+}
+
+header{
+  background-image: url('../images/KatieSelfie.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:90vh;
+}
+img{
+  max-width: 100%;
+}
+div {
+
+}
+
+nav {
+  background-color: #474747;
+}
+nav img {
+  width:3%;
+  height:3%;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  margin-top: 0.5%;
+}
+nav a:hover{
+  color:#60991F;
+  text-decoration:underline;
+}
+.intro {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  width: 40%;
+  padding: 1%;
+  position:relative;
+  top:137px;
+  left:70px;
 }
 /*ABOUT SECTION STYLE- in order to target that specific group we add a # infront on the secion name*/
 

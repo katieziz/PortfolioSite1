@@ -1,0 +1,20 @@
+/*GENERAL STYLES*/
+*{
+  box-sizing: border-box;
+  padding: 0;
+  border:1px solid grey;
+
+}
+/*HEADER STYLE*/
+header nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*ABOUT SECTION STYLE- in order to target that specific group we add a # infront on the secion name*/
+
+/*VIDEO SECTION STYLE*/
+
+/*EXPERIENCING SECTION STYLE*/
+
+/*FOOTER SECTION STYLES */

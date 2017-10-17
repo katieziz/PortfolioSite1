@@ -20,13 +20,35 @@
   </head>
   <body>
   <header id="home">
-      <nav>
+      <nav class="grid-spaceBetween mob_hide">
+    <!--This is your desktop nav -->
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <img src="images/KZlogo.jpg" alt="My Logo"/>
         <a href="#skills">Skills</a>
         <a href="#connect">Connect</a>
       </nav>
+
+      <!-- This is your mobile Nav -->
+
+      <nav class="nav_show">
+            <a href="#home" title="Home" class="toggle-mobile-menu">
+             <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+             </a>
+      </nav>
+      <div id="container">
+       <nav id="mobile-navigation" class="grid-middle-center-noBottom-noGutter bg-yellow animate" >
+           <a class="col-12 center toggle-mobile-menu" href="#home">
+             <i class="fa fa-times" aria-hidden="true"></i>
+           </a>
+           <a class="col-12 center" href="#home" class="toggle-mobile-menu">Home</a>
+           <a class="col-12 center" href="#home" class="toggle-mobile-menu">About</a>
+           <a class="col-12 center" href="#home" class="toggle-mobile-menu">Portfolio</a>
+           <a class="col-12 center" href="#home" class="toggle-mobile-menu">Contact</a>
+       </nav>
+     </div>
+      <!--End of mobile nav-->
+
       <div class="intro">
         <h1>Hello, I'm Katie<span class="blkSpan">.</span></h1>
         <h2>Toronto Based<span>.</span></h2>

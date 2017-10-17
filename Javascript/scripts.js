@@ -1,35 +1,53 @@
 //JQuery goes here
 $( document ).ready(function() {
+  //SMOOTH SCROLL JQuery
+  function scrollToSection(event) {
 
-}); //This closes your JQuery
-//SMOOTH SCROLL JQuery
-function scrollToSection(event) {
+    // Log
+    console.log('Clicked on anchor element');
+
+    // Prevent jumping to the section (default behaviour)
+    event.preventDefault();
+
+    // Get anchor element hash
+    var element = event.currentTarget,
+        hash = element.hash;
+
+    // Scroll the body and HTML to the ID equal to hash
+    $('html, body').animate({
+
+      // Find the offset of the targeted element on the page
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Set URL to clicked hash
+      window.location.hash = hash;
+
+    });
+
+  }
+
+  /*
+  **  Bind events
+  */
+  $('a').on('click', scrollToSection);
+// Hamburger MENU
+function changeBodyClass(event) {
 
   // Log
-  console.log('Clicked on anchor element');
+  console.log('Clicked on toggle menu class');
 
-  // Prevent jumping to the section (default behaviour)
+  // Prevent default event (clicking a link)
   event.preventDefault();
 
-  // Get anchor element hash
-  var element = event.currentTarget,
-      hash = element.hash;
-
-  // Scroll the body and HTML to the ID equal to hash
-  $('html, body').animate({
-
-    // Find the offset of the targeted element on the page
-    scrollTop: $(hash).offset().top
-  }, 800, function(){
-
-    // Set URL to clicked hash
-    window.location.hash = hash;
-
-  });
+  // Toggle body class
+  $('#container').toggleClass('mobile-menu-visible');
 
 }
 
 /*
 **  Bind events
 */
-$('a').on('click', scrollToSection);
+$('a').on('click', changeBodyClass);
+
+}); //This closes your jQuery
